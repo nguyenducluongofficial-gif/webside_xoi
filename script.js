@@ -11,7 +11,7 @@
   };
 
   /* ---------- DỮ LIỆU THỰC ĐƠN ---------- */
-  const photo = n => `images/anh-${n}.jpg`;
+  const photo = n => `anh-${n}.jpg`;
   const MENU = [
     { id: 'xoi-xeo', name: 'Xôi xéo ruốc hành', price: 20000, rating: 5, ratingCount: 0, available: true,
       description: 'Xôi nếp trộn đậu xanh xéo vàng ươm, bùi và dẻo, phủ ruốc hành thơm phức.',
@@ -212,4 +212,5 @@
 
   $('#year').textContent = new Date().getFullYear();
   checkBroken();
+
 })();
