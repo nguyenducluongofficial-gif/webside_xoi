@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trà Hiếu — Xôi Top 1 Tiên Hoa</title>
+<meta name="description" content="Trà Hiếu — Xôi Top 1 Tiên Hoa. Xôi xéo, xôi trắng, xôi gấc, xôi lạc nóng hổi mỗi sáng tại Tiên Hoa, Tiên Lữ, Hưng Yên.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<noscript><style>.reveal{opacity:1!important;transform:none!important}#intro{display:none}body{overflow:auto!important}</style></noscript>
+</head>
+<body class="is-loading">
+
+<!-- INTRO -->
+<div id="intro" class="intro" role="dialog" aria-label="Chào mừng đến Trà Hiếu">
+  <div class="intro__steam" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="intro__dust" aria-hidden="true"><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b></div>
+  <div class="intro__inner">
+    <p class="intro__brand split" data-split>Trà Hiếu</p>
+    <span class="intro__line"></span>
+    <p class="intro__slogan">Xôi Top 1 Tiên Hoa</p>
+  </div>
+  <button id="introSkip" class="intro__skip" type="button">Bỏ qua</button>
+</div>
+
+<!-- HEADER -->
+<header id="header" class="header">
+  <div class="container header__bar">
+    <a class="logo" href="#home" aria-label="Trà Hiếu — về đầu trang">Trà Hiếu</a>
+    <button id="navToggle" class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Mở menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="nav" class="nav" aria-label="Điều hướng chính">
+      <a href="#home">Trang chủ</a>
+      <a href="#menu">Thực đơn</a>
+      <a href="#album">Hình ảnh</a>
+      <a href="#about">Về Trà Hiếu</a>
+      <a href="#contact">Liên hệ</a>
+      <a class="btn btn--gold nav__cta" href="tel:0900000000">Đặt món</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- HERO (anh-1.jpg) -->
+  <section id="home" class="hero">
+    <img class="hero__img" src="images/anh-1.jpg" alt="Mẹt xôi nóng hổi của Trà Hiếu" width="1600" height="1000" fetchpriority="high">
+    <div class="hero__shade"></div>
+    <div class="container hero__body">
+      <h1 class="hero__brand split" data-split>Trà Hiếu</h1>
+      <p class="hero__slogan">Xôi Top 1 Tiên Hoa</p>
+      <p class="hero__desc">Hương vị thân quen, nóng hổi mỗi ngày.</p>
+      <div class="hero__cta">
+        <a class="btn btn--gold" href="#menu">Khám phá thực đơn</a>
+        <a class="btn btn--ghost-light" href="#contact">Liên hệ đặt xôi</a>
+      </div>
+      <ul class="hero__info">
+        <li><a href="tel:0900000000">0900 000 000</a></li>
+        <li><a href="mailto:trahieu@example.com">trahieu@example.com</a></li>
+        <li>Tiên Hoa, Tiên Lữ, Hưng Yên</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- DẢI TÊN MÓN -->
+  <div class="marquee" aria-hidden="true"><div class="marquee__track">
+    <span>Xôi xéo ruốc hành</span><span>Xôi trắng ruốc hành</span><span>Xôi gấc ruốc hành</span><span>Xôi lạc</span><span>Ngô luộc</span>
+    <span>Xôi xéo ruốc hành</span><span>Xôi trắng ruốc hành</span><span>Xôi gấc ruốc hành</span><span>Xôi lạc</span><span>Ngô luộc</span>
+  </div></div>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="container about__grid">
+      <div class="about__text reveal">
+        <p class="eyebrow">Về Trà Hiếu</p>
+        <h2>Một món xôi ngon, bắt đầu từ những điều giản dị.</h2>
+        <p>Nếp thơm được ngâm kỹ, đồ trên bếp củi lửa vừa, hạt xôi dẻo mà không nát. Mỗi sáng, Trà Hiếu gói từng phần xôi nóng, thêm chút ruốc hành, hạt lạc bùi hay màu gấc đỏ — những món quen thuộc của bữa sáng Việt.</p>
+        <p>Không cầu kỳ, chỉ chăm chút từng phần xôi để bạn nhận về đúng hương vị quê nhà.</p>
+        <p class="about__sign">Nếp thơm · Đồ mỗi sáng · Chăm từng phần</p>
+      </div>
+      <figure class="about__figure reveal">
+        <img src="images/anh-6.jpg" alt="Xôi trắng ruốc hành Trà Hiếu" width="800" height="1000" loading="lazy">
+        <figcaption>Xôi trắng ruốc hành</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- MENU (render bằng script.js) -->
+  <section id="menu" class="menu">
+    <div class="container">
+      <header class="menu__head reveal">
+        <h2>Thực đơn nhà Trà Hiếu</h2>
+        <p>Những món xôi thân quen, giản dị mà ngon.</p>
+      </header>
+      <div id="menuList" class="menu__list"><noscript>Vui lòng bật JavaScript để xem thực đơn.</noscript></div>
+    </div>
+  </section>
+
+  <!-- FOOD STORYTELLING -->
+  <section id="story" class="story">
+    <div class="container">
+      <h2 class="reveal">Hương vị thân quen mỗi ngày.</h2>
+      <div class="story__grid">
+        <figure class="story__big reveal">
+          <img src="images/anh-4.jpg" alt="Xôi xéo vàng ươm phủ ruốc hành" width="1000" height="800" loading="lazy">
+          <figcaption>Xôi xéo ruốc hành</figcaption>
+        </figure>
+        <figure class="story__s1 reveal">
+          <img src="images/anh-12.jpg" alt="Xôi lạc bùi béo" width="800" height="600" loading="lazy">
+          <figcaption>Xôi lạc</figcaption>
+        </figure>
+        <figure class="story__s2 reveal">
+          <img src="images/anh-9.jpg" alt="Xôi gấc đỏ au" width="800" height="600" loading="lazy">
+          <figcaption>Xôi gấc ruốc hành</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ALBUM: tất cả hình ảnh -->
+  <section id="album" class="album">
+    <div class="container">
+      <header class="album__head reveal">
+        <h2>Tất cả hình ảnh</h2>
+        <p>Từng khoảnh khắc từ bếp xôi Trà Hiếu. Bấm vào ảnh để xem lớn.</p>
+      </header>
+      <div id="albumGrid" class="album__grid"></div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="contact" class="cta">
+    <div class="container cta__inner reveal">
+      <h2>Sáng nay ăn xôi gì?</h2>
+      <p>Một phần xôi nóng hổi đang chờ bạn.</p>
+      <div class="cta__btns">
+        <a class="btn btn--cream" href="tel:0900000000">Gọi đặt xôi</a>
+        <a class="btn btn--ghost-light" href="https://zalo.me/yourphone" target="_blank" rel="noopener">Liên hệ ngay</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer__grid">
+    <div>
+      <p class="footer__brand">Trà Hiếu</p>
+      <p class="footer__slogan">Xôi Top 1 Tiên Hoa</p>
+    </div>
+    <ul class="footer__list">
+      <li><a href="tel:0900000000">0900 000 000</a></li>
+      <li><a href="mailto:trahieu@example.com">trahieu@example.com</a></li>
+      <li>Tiên Hoa, Tiên Lữ, Hưng Yên</li>
+    </ul>
+    <ul class="footer__list">
+      <li><a href="https://facebook.com/yourpage" target="_blank" rel="noopener">Facebook</a></li>
+      <li><a href="https://zalo.me/yourphone" target="_blank" rel="noopener">Zalo</a></li>
+    </ul>
+  </div>
+  <p class="container footer__copy">© <span id="year">2026</span> Nguyễn Đức Lượng. Giữ mọi quyền.</p>
+</footer>
+
+<a class="btn btn--brick fab" href="tel:0900000000">Gọi đặt xôi</a>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Xem ảnh phóng to" hidden>
+  <button id="lbClose" class="lb__btn lb__close" type="button" aria-label="Đóng">×</button>
+  <button id="lbPrev" class="lb__btn lb__prev" type="button" aria-label="Ảnh trước">‹</button>
+  <figure class="lb__fig">
+    <img id="lbImg" src="" alt="">
+    <figcaption><span id="lbCap"></span> <span id="lbCount"></span></figcaption>
+  </figure>
+  <button id="lbNext" class="lb__btn lb__next" type="button" aria-label="Ảnh sau">›</button>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
